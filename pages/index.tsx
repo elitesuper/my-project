@@ -1,13 +1,25 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
+import { useTheme } from 'next-themes';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
-  const Modechange = () => {
+  const { systemTheme, theme, setTheme } = useTheme();
 
+  const Modechange = () => {
+    const currentTheme = theme === "system" ? systemTheme : theme;
+
+    console.log(currentTheme);
+    if(currentTheme == "dark")
+    {
+      setTheme("light");
+    }else{
+      setTheme("dark");
+    }
+    
   }
   return (
     <>
@@ -20,7 +32,7 @@ export default function Home() {
       <main className="h-screen dark:bg-bgdark">
         <div className='w-full md:flex py-4 max-w-5xl mx-auto pt-5'>
           <div className='sm:w-full md:w-1/2 px-8'>
-            <button className='rounded bg-bgdark dark:bg-white text-white dark:text-bgdark px-2 py-1'>Mode</button>
+            <button className='rounded bg-bgdark dark:bg-white text-white dark:text-bgdark px-2 py-1' onClick={()=>{Modechange()}}>Mode</button>
           </div>
           <div className='sm:w-full md:w-1/2 px-8'>
             <div>
