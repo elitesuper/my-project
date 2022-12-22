@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         bgdark:"#1e1e1e",
         bgdarkdrop:"#0e0e0e",
-        bgdarkactivedrop:"#1d1d1d",
+        bgdarkactivedrop:"#333333",
       },
     },
   },

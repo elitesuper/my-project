@@ -6,6 +6,9 @@
   min-width: 85px;
 }
 
+.tag-desc{
+  max-width: 85px;
+}
 .dropdown ul li{
   font-size: 12px;
 }
