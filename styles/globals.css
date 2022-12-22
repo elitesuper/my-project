@@ -25,14 +25,13 @@
   background-blend-mode: screen;
 }
 .panel{
-  background: linear-gradient(104.33deg, rgba(79, 87, 209, 0.2) 9.28%, rgba(196, 196, 196, 0) 315.58%);
-  /* opacity: 0.6; */
+  background: linear-gradient(104.33deg, rgba(255, 255, 255, 0.09) 9.28%, rgba(196, 196, 196, 0) 315.58%);
+
   filter: drop-shadow(0px 4.52112px 6.78168px rgba(0, 0, 0, 0.25));
   backdrop-filter: blur(54.5222px);
   /* Note: backdrop-filter has minimal browser support */
-
+  
   border-radius: 10px;
-
   max-width: 680px;
 }
 
@@ -53,6 +52,22 @@
   margin-right: 6px;
 }
 
+
+.gradient-panel{
+
+  left: 25vw;
+  bottom: 0;
+  width: 50vw;
+  height: 50vh;
+  background: rgba(79, 87, 209, 0.2);
+  border: 1px solid #000000;
+  filter: blur(202px);
+  border-radius: 18px;
+  transform: rotate(-90deg);
+
+  position: absolute;
+
+}
 @media (max-width: 600px) {
   .twittericontag{
     display: none;

@@ -18,7 +18,7 @@ export default function Extensive(){
   }
   return (
     <>
-          <main className="h-screen dark:bg-bgdark flex">
+      <main className="h-screen dark:bg-bgdark flex">
         <div className='w-full my-auto'>
           <div className='w-full md:flex py-4 max-w-5xl mx-auto pt-5'>
             <div className='sm:w-full md:w-1/2 px-8 sm:mb-5 md:mb-0'>
