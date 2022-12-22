@@ -58,3 +58,13 @@
     display: none;
   }
 }
+
+
+@media (max-width: 1024px) {
+  .panel {
+    max-height: 300px;
+  }
+  .panel div img {
+    max-height: 200px;
+  }
+}
